@@ -3,7 +3,7 @@
 			<img src="<?php echo get_template_directory_uri() ?>/assets/images/dean.jpg" class="radius-topright offset-gutter" />
 		</div>
 		<div class="rust_bg offset-gutter" id="sidebar_header">
-			<h5>Dean Katherine S. Newman</h5>
+			<h5>Interim Dean Beverly Wendland</h5>
 		</div>
 		<div class="row">
 			<?php wp_nav_menu( array( 
