@@ -598,7 +598,12 @@ li.external a::after {
 
 li.external a::after:hover {
 	color:#000;
-} 
+}
+
+li.external.sidebar a::after {
+line-height: 1.4em;
+color: #336699;
+float :none } 
 
 .menu-quicklinks-container #menu-item-920 {
 	padding-right: 0;
@@ -1579,7 +1584,10 @@ body.news-events .wp-post-image {
 
 #SECalendarTable td {
 	border: 1px solid #ddd;
+	width: 14.28%;
+	height: 138px;
 }
+
 #SECalendarNav {
 	margin: 10px auto 20px auto;
 }
@@ -1625,6 +1633,17 @@ a.rssLink {
 .SECalendarPropertyContainer span.SECalendarPropertyLabel {
 	font-weight: bold;
 }
+
+#calendar_container iframe {
+height: 785px!important;
+}
+
+#SECalendarTable td {
+	border: 1px solid #ddd;
+	width: 14.28%;
+	height: 138px;
+}
+
 /******* News Index Pages ******/
 
 #archive article,
