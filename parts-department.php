@@ -33,7 +33,7 @@
 					<?php endif; ?>
 					<?php if ( get_post_meta($post->ID, 'ecpt_homepage', true) ) : ?>
 						<br><span class="icon-globe" itemprop="url">
-						<a href="http://<?php echo get_post_meta($post->ID, 'ecpt_homepage', true); ?>">
+						<a href="http://<?php echo get_post_meta($post->ID, 'ecpt_homepage', true); ?>" onclick="ga('send','event','Outgoing Links','<?php echo get_post_meta($post->ID, 'ecpt_homepage', true); ?>')">
 							<?php echo get_post_meta($post->ID, 'ecpt_homepage', true);?>
 						</a>
 						</span>
@@ -100,7 +100,7 @@
 			<ul class="nav">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<?php if ( get_post_meta($post->ID, 'ecpt_homepage', true) ) : ?>
-					<li><span class="icon-arrow-right-2"></span><a href="http://<?php echo get_post_meta($post->ID, 'ecpt_homepage', true); ?>">Department Website</a></li>
+					<li><span class="icon-arrow-right-2"></span><a href="http://<?php echo get_post_meta($post->ID, 'ecpt_homepage', true); ?>" onclick="ga('send','event','Outgoing Links','<?php echo get_post_meta($post->ID, 'ecpt_homepage', true); ?>')">Department Website</a></li>
 				<?php endif; ?>
 
 				<?php if ( get_post_meta($post->ID, 'ecpt_facultypage', true) ) : ?>
