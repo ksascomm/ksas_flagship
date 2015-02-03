@@ -1,29 +1,65 @@
 /*******1.0  Fonts ************/
 
+@font-face {
+  font-family: 'quadon';
+  src: url('../fonts/quadon/Quadon-Medium.eot');
+  src: url('../fonts/quadon/Quadon-Medium.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/quadon/Quadon-Medium.woff') format('woff'),
+       url('../fonts/quadon/Quadon-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'gentona';
+  src: url('../fonts/gentona/Gentona-Book.eot');
+  src: url('../fonts/gentona/Gentona-Book.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/gentona/Gentona-Book.woff') format('woff'),
+       url('../fonts/gentona/Gentona-Book.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'gentona-semibold';
+  src: url('../fonts/gentona/Gentona-SemiBold.eot');
+  src: url('../fonts/gentona/Gentona-SemiBold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/gentona/Gentona-SemiBold.woff') format('woff'),
+       url('../fonts/gentona/Gentona-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'gentona-bold';
+  src: url('../fonts/gentona/Gentona-Bold.eot');
+  src: url('../fonts/gentona/Gentona-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/gentona/Gentona-Bold.woff') format('woff'),
+       url('../fonts/gentona/Gentona-Bold.ttf') format('truetype');
+}
+
 body {
-	font-family: "Myriad W01 Regular", Arial, sans-serif;
+	font-family: 'gentona', Arial, sans-serif;
 	background: #000 url('../images/bg-giving.jpg') no-repeat fixed top center;
 }
 
-h1, h2, h3, h4, h5, h6, .semibold,
-table thead tr th, table tfoot tr td  {
-	font-family: "Myriad W01 SmBd", Arial, sans-serif;
-	color:#3478b6;
-	font-weight: normal;
+h1, h2, .semibold, table thead tr th, table tfoot tr td  {
+	font-family: 'quadon', Arial, sans-serif;
+	color:#418fde;
+	font-weight: 400;
+}
+
+h3, h4, h5, h6 {
+	font-family:'gentona-semibold', Arial, sans-serif;
+	color:#418fde;
+	font-weight: 600;
 }
 
 em, i,
 blockquote,
 blockquote p,
 .italic {
-	font-family:"Myriad W01 It";
-	font-style: normal;
+	font-family:'gentona', Arial, sans-serif;
+	font-style: italic;
 }
 
 strong, b,
 .bold {
-	font-family:"Myriad W01 Bd";
-	font-weight: normal;
+	font-family:'gentona-bold', Arial, sans-serif;
+	font-weight: 700;
 }
 
 .uppercase {
@@ -35,12 +71,12 @@ strong, b,
 }
 
 .copy h2 {
-	color: #336699;
+	color: #005eb8;
 }
 
 p {
 	line-height: 1.3em;
-	color: #333;
+	color: #2c2c33;
 }
 
 .content p {
@@ -51,7 +87,8 @@ h6,
 time {
 	font-size:10px;
 	color:#666;
-	font-family:"Myriad W01 Bd";
+	font-family:'gentona-bold', Arial, sans-serif;
+	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	margin-bottom: 3px;
@@ -113,18 +150,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2fcfcfc', e
 	color:#FFF;
 }
 
-.black {color: #333;}
+.black {color: #2c2c33;}
 
 .sky_blue {
-	color: #6699cc;
+	color: #68ace5;
 }
 
 .blue {
-	color:#3478b6;
+	color:#418fde;
 }
 
 .blue_bg {
-	background: #3478b6;
+	background: #418fde;
 }
 
 .dark_blue_bg {
@@ -136,21 +173,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2fcfcfc', e
 }
 
 .rust_bg {
-	background: #663333;
+	background: #6f2c3f;
 }
 .green_bg,
 #department {
-	background: #006666;
+	background: #007a53;
 }
 
 .purple_bg,
 #interdisciplinary {
-	background: #333366;
+	background: #24135f;
 }
 
 .fushia,
 #arts {
-	background: #993366;
+	background: #8e3a80;
 }
 
 .yellow_bg,
@@ -167,7 +204,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2fcfcfc', e
 .bright_blue_bg,
 .bright_blue_bg.button:hover,
 #social {
-	background: #3399ff;
+	background: #418fde;
 }
 
 button,
@@ -176,9 +213,11 @@ button,
 	-webkit-border-radius:  7px;
 	-moz-border-radius: 	7px;
 	border-radius: 			7px;
-	font-family: "Myriad W01 SmBd", Arial, sans-serif;
+	font-family: 'gentona-semibold', Arial, sans-serif;
+	font-weight: 600;
+  font-style: normal;
 	color: #FFF;
-	font-size: 16px;
+	font-size: 15px;
 	padding:8px 12px;
 	margin-right: 10px;
 	margin-bottom: 10px;
@@ -205,7 +244,7 @@ button:hover,
 }
 
 .gallery {
-	background: #3478b6;
+	background: #418fde;
 	margin-bottom: 30px;
 }
 
@@ -329,7 +368,7 @@ ul, ol {
 	line-height: 1.4em;
 }
 .panel {
-	background: #3478b6;
+	background: #418fde;
 	border:none;
 	color: #FFF;
 	font-size: 14px;
@@ -342,7 +381,7 @@ ul, ol {
 
 .panel li:before {
     content:"\25FC";
-    font-family: "Myriad W01 Regular", Arial, sans-serif;
+    font-family: 'gentona', Arial, sans-serif;
     padding-right: 3px;
     vertical-align:middle;
 	
@@ -359,23 +398,25 @@ ul, ol {
 }
 
 .callout.panel {
-	color: #333;
+	color: #2c2c33;
 	background: #ffcc66;
 }
 
 .callout.panel a li,
 .callout.panel li a{
-	color: #333;
+	color: #2c2c33;
 }
 .callout.panel p,
 .callout.panel ul {
-	font-family: "Myriad W01 SmBd", Arial, sans-serif;
+	font-family: 'gentona-semibold', Arial, sans-serif;
+	font-weight: 600;
+  font-style: normal;
 }
 .callout.panel h3,
 .callout.panel li:before,
 .callout.panel a:hover
  {
-    color: #663333;
+    color: #6f2c3f;
 }
 
 .callout.panel h3 {
@@ -398,7 +439,7 @@ ul, ol {
 .video_thumb .icon-play:before {
 	position: absolute;
 	top:20%;
-	color:#336699;
+	color:#005eb8;
 	left:36%;
 	font-size: 74px;
 	opacity: .8;
@@ -426,7 +467,7 @@ blockquote:before {
 	bottom:20%;
 	right: 8%;
 	opacity: .25;
-	color: #336699;	
+	color: #005eb8;	
 }
 .lt-ie9 blockquote:before {
 	content:none;
@@ -508,7 +549,7 @@ nav ul {
 }
 
 #main_nav ul li:hover{ 
-	background: #255682; 
+	background: #005eb8; 
 }
 
 #main_nav ul li:hover ul,
@@ -516,8 +557,8 @@ nav ul {
 #main_nav ul li.current_page_ancestor ul,
 #main_nav ul li.current_page_item ul {
 	visibility:visible; 
-	background: rgb(51, 102, 153);
-	background: rgba(51, 102, 153, .9);
+	background: rgb(0, 94, 184);
+	background: rgba(0, 94, 184, .8);
 	width: 100%;
 	max-width:1000px; 
 	min-height:62px;
@@ -528,8 +569,8 @@ nav ul {
 }
 #main_nav ul li:hover ul,
 #main_nav ul li a:hover ul {
-	background: rgb(51, 102, 153);
-	background: rgba(51, 102, 153, 1);
+	background: rgb(0, 94, 184);
+	background: rgba(0, 94, 184, 1);
 	z-index: 2;
 }
 
@@ -555,13 +596,13 @@ nav ul {
 .mobile-logo:hover {background: none;}
 
 #main_nav ul li.logo.active a:hover,
-.mobile-logo a:hover { background: url('../images/logo.png') no-repeat top; }
+.mobile-logo a:hover { background: url('../images/jhu.png') no-repeat top; }
 
 #main_nav li.active,
 #main_nav li.current_page_parent,
 #main_nav li.current_page_ancestor,
 #main_nav ul li.current_page_item { 
-	background: #255682; 
+	background: #005eb8; 
 }
 
 #main_nav ul li.logo.current_page_item,
@@ -602,7 +643,7 @@ li.external a::after:hover {
 
 li.external.sidebar a::after {
 line-height: 1.4em;
-color: #336699;
+color: #005eb8;
 float :none } 
 
 .menu-quicklinks-container #menu-item-920 {
@@ -630,10 +671,19 @@ float :none }
 }
 #main_nav li.logo a,
 .mobile-logo a {
-	background: url('../images/logo.png') no-repeat top;
+	background-image: url('../images/jhu.png');
+	background-position: top;
+	background-repeat: no-repeat;
+	background-color: #005eb8;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-left-radius: 10px;
 	width: 237px;
 	height: 155px;
-	margin-top:-94px;
+	margin-top:-99px;
 	text-indent: -9999px;
 	position: absolute;
 }
@@ -645,18 +695,29 @@ float :none }
 	margin: 0 auto;
 }
 #main_nav ul li.logo.current_page_item a  {
-	background: url('../images/logo.png') no-repeat top;
+background-image: url('../images/jhu.png');
+background-position: top;
+background-repeat: no-repeat;
+background-color: #005eb8;
+-webkit-border-bottom-right-radius: 10px;
+-moz-border-radius-bottomright: 10px;
+border-bottom-right-radius: 10px;
+-webkit-border-bottom-left-radius: 10px;
+-moz-border-radius-bottomleft: 10px;
+border-bottom-left-radius: 10px;
+margin-top: -99px;
 }
 
 #search-bar {
-	background: #333;
+	background: #2c2c33;
 	-webkit-border-radius:  10px;
 	-moz-border-radius: 	10px;
 	border-radius: 			10px;
 	color: #ccc;
 	text-transform: uppercase;
-	font-family:"Myriad W01 Bd";
-	margin-top:35px;
+	font-family:'gentona-bold';
+	font-weight: 700;
+	margin-top: 35px;
 	margin-bottom: 12px;
 }
 
@@ -726,7 +787,7 @@ footer a,
 }
 #social-media a {
 	content:none;
-	color:#333;
+	color:#2c2c33;
 	background: #555;
 	-webkit-border-radius:  50%;
 	-moz-border-radius: 	50%;
@@ -737,7 +798,7 @@ footer a,
 }
 
 #social-media a:hover {
-	color:#333;
+	color:#2c2c33;
 	background: #CCC;
 }
 
@@ -753,7 +814,8 @@ footer a,
 
 #quicklinks li.has-flyout {
 	background: #d07b00;
-	font-family:"Myriad W01 Bd";
+	font-family:'gentona-bold';
+	font-weight: 700;
 	color: #FFF;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -781,7 +843,8 @@ footer a,
 #quicklinks ul.flyout li a { 
 	background: #f2f2f2; 
 	border-bottom: 1px solid #e6e6e6; 
-	font-family: "Myriad W01 Regular", Arial, sans-serif;
+	font-family: 'gentona', Arial, sans-serif;
+	font-weight: 400;
 	color: #555; 
 	display: block; 
 	font-size: 12px; 
@@ -796,7 +859,7 @@ footer a,
 
 #quicklinks ul.flyout li a:hover { 
 	background: #ffcc99; 
-	color: #333; 
+	color: #2c2c33; 
 }
 
 #quicklinks .nav-bar > li.has-flyout > a:first-child::after {
@@ -902,7 +965,9 @@ body.home .reveal-modal {
 
 #field_search,
 #field_search dd {
-	font-family: "Myriad W01 SmBd", Arial, sans-serif;
+	font-family: 'gentona-semibold';
+  font-weight: 600;
+  font-style: normal;
 	color: #FFF;
 	font-size: 16px;
 }
@@ -930,7 +995,7 @@ body.home .reveal-modal {
 }
 
 #field_search input[type="submit"] {
-	background: #333;
+	background: #2c2c33;
 	height: 35px;
 	width: 38px;
 	font-family: 'flagship';
@@ -1103,11 +1168,11 @@ min-width: 240px;
 }
 
 #interdisciplinary {
-	background: #333366;
+	background: #24135f;
 }
 
 #arts {
-	background: #993366;
+	background: #8e3a80;
 }
 
 .disciplines {
@@ -1167,7 +1232,7 @@ min-width: 240px;
 	top: 100%;
 	width: 0;
 	height: 0;
-	border: 15px solid #3399ff;
+	border: 15px solid #418fde;
 	left: 0;
 	border-bottom-color: transparent;
 }
@@ -1234,14 +1299,15 @@ min-width: 240px;
     width:83%;
     background: #666;
 	color:#ccc;
-	font-family:"Myriad W01 It";
+	font-family: 'gentona';
+  	font-weight: 400;
 	font-size: 16px;
 	border:none;
 
 }
 
 #fields_search input[type="submit"] {
-	background: #333;
+	background: #2c2c33;
 	height: 40px;
 	width: 45px;
 	font-family: 'flagship';
@@ -1270,19 +1336,21 @@ min-width: 240px;
 }
 
 .button.radio a {
-	color: #333;
+	color: #2c2c33;
  padding:5px;
 }
 
 .button.radio a.selected,
 .button.radio a:hover {
  -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px;
- background-color: #3478b6;
+ background-color: #418fde;
  color: #FFF;
 }
 /******* FIELDS OF STUDY LANDING PAGES ******/
 #field_image {
-	font-family: "Myriad W01 SmBd", Arial, sans-serif;
+	font-family: 'gentona-semibold';
+  	font-weight: 600;
+  	font-style: normal;
 }
 
 #field_image p {
@@ -1304,7 +1372,7 @@ min-width: 240px;
 #landing h2,
 #landing h3,
 #landing a  {
-	color: #3478b6;	
+	color: #418fde;	
 }
 p.contact,
 #landing p.contact a {
@@ -1322,7 +1390,7 @@ p.contact [class^="icon-"]:before,
 p.contact [class*=" icon-"]:before {
 	vertical-align: middle;
 	font-size: 18px;
-	color:#3478b6;
+	color:#418fde;
 	margin-right: 0px;
 }
 
@@ -1350,8 +1418,10 @@ ul.nav li [class*="icon-"]:before {
 }
 
 .sidebar_bg ul.nav li a {
-	font-family: "Myriad W01 SmBd", Arial, sans-serif;
-	color:#336699;
+	font-family: 'gentona-semibold';
+  	font-weight: 600;
+  	font-style: normal;
+	color:#005eb8;
 }
 
 ul.nav:last-child {
@@ -1363,7 +1433,7 @@ ul.nav:last-child {
 }
 
 .jumpmenu select {
-    background: #3478b6;
+    background: #418fde;
     border: #666;
     color: #FFF;
     font-size: 14px;
@@ -1404,7 +1474,8 @@ ul.nav:last-child {
 
 .banner h3 {
 	text-transform: uppercase;
-	font-family:"Myriad W01 Bd";
+	font-family: 'gentona-bold';
+  	font-weight: 700;
 	font-size: 18px;
 	line-height: 36px;
 }
@@ -1430,14 +1501,15 @@ body.news-events h4 {
 	line-height: 1.1em;
 	margin-bottom:6px;
 	color: #000;
-	font-family:"Myriad W01 Bd";
+	font-family: 'gentona-bold';
+  	font-weight: 700;
 }
 
 body.news-events summary,
 body.news-events a summary,
 #archive a summary {
 	line-height: 1.25em;
-	color: #333;
+	color: #2c2c33;
 	
 }
 
@@ -1524,18 +1596,20 @@ body.news-events .wp-post-image {
 	padding: 0 10px 4px 10px;
 }
 #SECalendarListWrapper .SECalendarEventDate {
-	color:#663333;
+	color:#6f2c3f;
 	font-size:20px;
 	margin-bottom:10px;
-	font-family:"Myriad W01 Bd";
+	font-family: 'gentona-bold';
+  	font-weight: 700;
 }
 
 #SECalendarListWrapper .SECalendarEventTime,
 #SECalendarListWrapper .SECalendarEventLocation {
-	color: #333;
+	color: #2c2c33;
 	font-size:10px;
 	font-weight:normal;
-	font-family: "Myriad W01 Regular", Arial, sans-serif;
+	font-family: 'gentona';
+  	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
@@ -1543,14 +1617,15 @@ body.news-events .wp-post-image {
 #SECalendarListWrapper .SECalendarEventName,
 #SECalendarListWrapper .SECalendarNoEvent,
 #SECalendarListWrapper .SECalendarEventName a {
-	color: #3399ff;
+	color: #418fde;
 	font-size:14px;
-	font-weight:normal;
-	font-family: "Myriad W01 Regular", Arial, sans-serif;
+	font-family: 'gentona';
+  	font-weight: 400;
 }
 
 .SECalendarEventName h3 {
-	font-family:"Myriad W01 Bd";
+	font-family: 'gentona-bold';
+  	font-weight: 700;
 	font-size: 18px;
 }
 
@@ -1565,7 +1640,9 @@ body.news-events .wp-post-image {
 }
 
 #SECalendarListWrapper .SECalendarPropertyLabel {
-	font-family:"Myriad W01 Bd";
+	font-family: 'gentona-bold';
+  	font-weight: 700;
+  	font-style: normal;
 	float:left;
 	margin-right:10px;
 }
@@ -1602,7 +1679,9 @@ a.rssLink {
 }
 
 #SECalendarNav .SECalendarMonth {
-	font-family: "Myriad W01 SmBd", Arial, sans-serif;
+	font-family: 'gentona-semibold', Arial, sans-serif;
+  	font-weight: 600;
+  font-style: normal;
 	font-size: 28px;
 	margin-top: 5px;
 }
@@ -1658,7 +1737,7 @@ ul.photo_list h5 {
 
 ul.photo_list a,
 #archive article a {
-	color: #333;
+	color: #2c2c33;
 }
 
 ul.photo_list li:last-child,
@@ -1709,7 +1788,7 @@ background: #3279BB;
 
 .pagination .current{
 padding:6px 9px 5px 9px;
-background: #3478b6;
+background: #418fde;
 color:#fff;
 }
 
@@ -1824,8 +1903,8 @@ div.orbit-wrapper div.timer {
 	position: absolute;
 	bottom: 20px;
 	width: 100%;
-	background: rgb(51, 102, 153);
-	background: rgba(51, 102, 153, .9);
+	background: rgb(0, 94, 184);
+	background: rgba(0, 94, 184, .9);
 	padding: 0 15px;
 }
 
@@ -2066,7 +2145,7 @@ text-decoration: none;
 font-size: 16px;
 line-height: 22px;
 display: block;
-font-family: Arial, Helvetica, sans-serif;
+font-family: 'gentona-bold';
 font-weight: 700;
 text-align: left;
 }
