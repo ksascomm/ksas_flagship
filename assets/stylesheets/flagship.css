@@ -9,7 +9,7 @@
 }
 
 @font-face {
-  font-family: 'gentona';
+  font-family: 'gentona-book';
   src: url('../fonts/gentona/Gentona-Book.eot');
   src: url('../fonts/gentona/Gentona-Book.eot?#iefix') format('embedded-opentype'),
        url('../fonts/gentona/Gentona-Book.woff') format('woff'),
@@ -31,8 +31,16 @@
        url('../fonts/gentona/Gentona-Bold.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'gentona-light';
+  src: url('../fonts/gentona/Gentona-Light.eot');
+  src: url('../fonts/gentona/Gentona-Light.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/gentona/Gentona-Light.woff') format('woff'),
+       url('../fonts/gentona/Gentona-Light.ttf') format('truetype');
+}
+
 body {
-	font-family: 'gentona', Arial, sans-serif;
+	font-family: 'gentona-light', Arial, sans-serif;
 	background: #000 url('../images/bg-giving.jpg') no-repeat fixed top center;
 }
 
@@ -43,23 +51,23 @@ h1, h2, .semibold, table thead tr th, table tfoot tr td  {
 }
 
 h3, h4, h5, h6 {
-	font-family:'gentona-semibold', Arial, sans-serif;
+	font-family:'gentona-book', Arial, sans-serif;
 	color:#418fde;
-	font-weight: 600;
+	font-weight: 400;
 }
 
 em, i,
 blockquote,
 blockquote p,
 .italic {
-	font-family:'gentona', Arial, sans-serif;
+	font-family:'gentona-light', Arial, sans-serif;
 	font-style: italic;
 }
 
 strong, b,
 .bold {
-	font-family:'gentona-bold', Arial, sans-serif;
-	font-weight: 700;
+	font-family:'gentona-semibold', Arial, sans-serif;
+	font-weight: 600;
 }
 
 .uppercase {
@@ -87,8 +95,8 @@ h6,
 time {
 	font-size:10px;
 	color:#666;
-	font-family:'gentona-bold', Arial, sans-serif;
-	font-weight: 700;
+	font-family:'gentona-semibold', Arial, sans-serif;
+	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	margin-bottom: 3px;
@@ -213,8 +221,8 @@ button,
 	-webkit-border-radius:  7px;
 	-moz-border-radius: 	7px;
 	border-radius: 			7px;
-	font-family: 'gentona-semibold', Arial, sans-serif;
-	font-weight: 600;
+	font-family: 'gentona-book', Arial, sans-serif;
+	font-weight: 400;
   font-style: normal;
 	color: #FFF;
 	font-size: 15px;
@@ -381,7 +389,7 @@ ul, ol {
 
 .panel li:before {
     content:"\25FC";
-    font-family: 'gentona', Arial, sans-serif;
+    font-family: 'gentona-light', Arial, sans-serif;
     padding-right: 3px;
     vertical-align:middle;
 	
@@ -408,7 +416,7 @@ ul, ol {
 }
 .callout.panel p,
 .callout.panel ul {
-	font-family: 'gentona-semibold', Arial, sans-serif;
+	font-family: 'gentona-book', Arial, sans-serif;
 	font-weight: 600;
   font-style: normal;
 }
@@ -537,7 +545,7 @@ nav ul {
 	padding: 0 18px;
 }
 #main_nav ul li a {
-	font-size:18px;
+	font-size:17px;
 	color: #FFF;
 }
 
@@ -715,8 +723,8 @@ margin-top: -99px;
 	border-radius: 			10px;
 	color: #ccc;
 	text-transform: uppercase;
-	font-family:'gentona-bold';
-	font-weight: 700;
+	font-family:'gentona-semibold', Arial, sans-serif;
+	font-weight: 600;
 	margin-top: 35px;
 	margin-bottom: 12px;
 }
@@ -727,7 +735,7 @@ margin-top: -99px;
 
 #search-bar a {
 	color:#FFF;
-	font-size: 9px;
+	font-size: 8px;
     letter-spacing: 1px;
 }
 
@@ -814,8 +822,8 @@ footer a,
 
 #quicklinks li.has-flyout {
 	background: #d07b00;
-	font-family:'gentona-bold';
-	font-weight: 700;
+	font-family:'gentona-semibold', Arial, sans-serif;
+	font-weight: 600;
 	color: #FFF;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -843,7 +851,7 @@ footer a,
 #quicklinks ul.flyout li a { 
 	background: #f2f2f2; 
 	border-bottom: 1px solid #e6e6e6; 
-	font-family: 'gentona', Arial, sans-serif;
+	font-family: 'gentona-book', Arial, sans-serif;
 	font-weight: 400;
 	color: #555; 
 	display: block; 
@@ -965,7 +973,7 @@ body.home .reveal-modal {
 
 #field_search,
 #field_search dd {
-	font-family: 'gentona-semibold';
+	font-family: 'gentona-semibold', Arial, sans-serif;
   font-weight: 600;
   font-style: normal;
 	color: #FFF;
@@ -1299,7 +1307,7 @@ min-width: 240px;
     width:83%;
     background: #666;
 	color:#ccc;
-	font-family: 'gentona';
+	font-family: 'gentona-book', Arial, sans-serif;
   	font-weight: 400;
 	font-size: 16px;
 	border:none;
@@ -1348,7 +1356,7 @@ min-width: 240px;
 }
 /******* FIELDS OF STUDY LANDING PAGES ******/
 #field_image {
-	font-family: 'gentona-semibold';
+	font-family: 'gentona-semibold', Arial, sans-serif;
   	font-weight: 600;
   	font-style: normal;
 }
@@ -1418,7 +1426,7 @@ ul.nav li [class*="icon-"]:before {
 }
 
 .sidebar_bg ul.nav li a {
-	font-family: 'gentona-semibold';
+	font-family: 'gentona-semibold', Arial, sans-serif;
   	font-weight: 600;
   	font-style: normal;
 	color:#005eb8;
@@ -1474,8 +1482,8 @@ ul.nav:last-child {
 
 .banner h3 {
 	text-transform: uppercase;
-	font-family: 'gentona-bold';
-  	font-weight: 700;
+	font-family: 'gentona-semibold', Arial, sans-serif;
+  	font-weight: 600;
 	font-size: 18px;
 	line-height: 36px;
 }
@@ -1501,8 +1509,8 @@ body.news-events h4 {
 	line-height: 1.1em;
 	margin-bottom:6px;
 	color: #000;
-	font-family: 'gentona-bold';
-  	font-weight: 700;
+	font-family: 'gentona-semibold', Arial, sans-serif;
+  	font-weight: 600;
 }
 
 body.news-events summary,
@@ -1599,7 +1607,7 @@ body.news-events .wp-post-image {
 	color:#6f2c3f;
 	font-size:20px;
 	margin-bottom:10px;
-	font-family: 'gentona-bold';
+	font-family: 'gentona-bold', Arial, sans-serif;
   	font-weight: 700;
 }
 
@@ -1608,7 +1616,7 @@ body.news-events .wp-post-image {
 	color: #2c2c33;
 	font-size:10px;
 	font-weight:normal;
-	font-family: 'gentona';
+	font-family: 'gentona-book', Arial, sans-serif;;
   	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -1619,12 +1627,12 @@ body.news-events .wp-post-image {
 #SECalendarListWrapper .SECalendarEventName a {
 	color: #418fde;
 	font-size:14px;
-	font-family: 'gentona';
+	font-family: 'gentona-book', Arial, sans-serif;;
   	font-weight: 400;
 }
 
 .SECalendarEventName h3 {
-	font-family: 'gentona-bold';
+	font-family: 'gentona-bold', Arial, sans-serif;
   	font-weight: 700;
 	font-size: 18px;
 }
@@ -1640,7 +1648,7 @@ body.news-events .wp-post-image {
 }
 
 #SECalendarListWrapper .SECalendarPropertyLabel {
-	font-family: 'gentona-bold';
+	font-family: 'gentona-bold', Arial, sans-serif;
   	font-weight: 700;
   	font-style: normal;
 	float:left;
@@ -2145,8 +2153,8 @@ text-decoration: none;
 font-size: 16px;
 line-height: 22px;
 display: block;
-font-family: 'gentona-bold';
-font-weight: 700;
+font-family: 'gentona-semibold', Arial, sans-serif;
+font-weight: 600;
 text-align: left;
 }
 .mean-container a.meanmenu-reveal h3 {
