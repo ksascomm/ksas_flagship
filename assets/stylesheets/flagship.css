@@ -24,14 +24,6 @@
 }
 
 @font-face {
-  font-family: 'gentona-bold';
-  src: url('../fonts/gentona/Gentona-Bold.eot');
-  src: url('../fonts/gentona/Gentona-Bold.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/gentona/Gentona-Bold.woff') format('woff'),
-       url('../fonts/gentona/Gentona-Bold.ttf') format('truetype');
-}
-
-@font-face {
   font-family: 'gentona-light';
   src: url('../fonts/gentona/Gentona-Light.eot');
   src: url('../fonts/gentona/Gentona-Light.eot?#iefix') format('embedded-opentype'),
@@ -66,8 +58,8 @@ blockquote p,
 
 strong, b,
 .bold {
-	font-family:'gentona-semibold', Arial, sans-serif;
-	font-weight: 600;
+	font-family:'gentona-book', Arial, sans-serif;
+	font-weight: 400;
 }
 
 .uppercase {
@@ -95,8 +87,8 @@ h6,
 time {
 	font-size:10px;
 	color:#666;
-	font-family:'gentona-semibold', Arial, sans-serif;
-	font-weight: 600;
+	font-family:'gentona-book', Arial, sans-serif;
+	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	margin-bottom: 3px;
@@ -260,8 +252,8 @@ button:hover,
 	padding: 15px 0;
 }
 li.gallery-item {
-	float:left; 
-	margin-right:10px; 
+	float:left;
+	margin-right:10px;
 	margin-bottom:17px;
 }
 
@@ -392,7 +384,7 @@ ul, ol {
     font-family: 'gentona-light', Arial, sans-serif;
     padding-right: 3px;
     vertical-align:middle;
-	
+
 }
 
 #landing .panel li a,
@@ -400,7 +392,7 @@ ul, ol {
 	color:#fff;
 }
 
-#landing .panel li a:hover, 
+#landing .panel li a:hover,
 .panel li a:hover {
 	color:#ffcc66;
 }
@@ -417,7 +409,7 @@ ul, ol {
 .callout.panel p,
 .callout.panel ul {
 	font-family: 'gentona-book', Arial, sans-serif;
-	font-weight: 600;
+	font-weight: 400;
   font-style: normal;
 }
 .callout.panel h3,
@@ -475,7 +467,7 @@ blockquote:before {
 	bottom:20%;
 	right: 8%;
 	opacity: .25;
-	color: #005eb8;	
+	color: #005eb8;
 }
 .lt-ie9 blockquote:before {
 	content:none;
@@ -506,29 +498,29 @@ nav ul {
 }
 
 #main_nav {
-	position:relative; 
-	margin:15px 0; 
+	position:relative;
+	margin:15px 0;
 }
 #main_nav ul {
-	padding:0; 
-	margin:0; 
+	padding:0;
+	margin:0;
 	list-style-type: none;
 	background: rgb(0,0,0);
 	background: rgba(0,0,0,.75);
 	-webkit-border-radius:  10px;
 	-moz-border-radius: 	10px;
-	border-radius: 			10px;	
+	border-radius: 			10px;
 	z-index:100;
 	width: 100%;
-	max-width:1000px; 
-	height:62px; 
+	max-width:1000px;
+	height:62px;
 }
 
 #main_nav ul li {
-	float:left; 
+	float:left;
 	line-height: 62px;
 	padding: 0 25px;
-	
+
 }
 #main_nav ul li:nth-child(1):hover,
 #main_nav #menu-item-808.current_page_item,
@@ -550,25 +542,25 @@ nav ul {
 }
 
 #main_nav ul li ul {
-	visibility:hidden; 
-	position:absolute; 
-	top:62px; 
-	left:0; 
+	visibility:hidden;
+	position:absolute;
+	top:62px;
+	left:0;
 }
 
-#main_nav ul li:hover{ 
-	background: #005eb8; 
+#main_nav ul li:hover{
+	background: #005eb8;
 }
 
 #main_nav ul li:hover ul,
 #main_nav ul li a:hover ul,
 #main_nav ul li.current_page_ancestor ul,
 #main_nav ul li.current_page_item ul {
-	visibility:visible; 
+	visibility:visible;
 	background: rgb(0, 94, 184);
 	background: rgba(0, 94, 184, .8);
 	width: 100%;
-	max-width:1000px; 
+	max-width:1000px;
 	min-height:62px;
 	-webkit-border-radius:  10px;
 	-moz-border-radius: 	10px;
@@ -589,7 +581,7 @@ nav ul {
 #main_nav ul li a:hover ul li a {display:block; color:#fff;}
 
 #main_nav ul li:hover ul li a:hover,
-#main_nav ul li a:hover ul li a:hover {  
+#main_nav ul li a:hover ul li a:hover {
 	background: none;
 	color:#000;
 }
@@ -609,8 +601,8 @@ nav ul {
 #main_nav li.active,
 #main_nav li.current_page_parent,
 #main_nav li.current_page_ancestor,
-#main_nav ul li.current_page_item { 
-	background: #005eb8; 
+#main_nav ul li.current_page_item {
+	background: #005eb8;
 }
 
 #main_nav ul li.logo.current_page_item,
@@ -628,7 +620,7 @@ nav ul {
 #mobile_nav_container {
 	padding: 15px 0;
 	margin-top: 15px;
-	margin-bottom: 45px;	
+	margin-bottom: 45px;
 }
 li.external a::after {
 	content: "\e007";
@@ -652,7 +644,7 @@ li.external a::after:hover {
 li.external.sidebar a::after {
 line-height: 1.4em;
 color: #005eb8;
-float :none } 
+float :none }
 
 .menu-quicklinks-container #menu-item-920 {
 	padding-right: 0;
@@ -759,7 +751,7 @@ margin-top: -99px;
     float:left;
     width:82%;
     border:none;
-} 
+}
 
 #search-bar input[type="submit"] {
 	background: #666;
@@ -822,52 +814,52 @@ footer a,
 
 #quicklinks li.has-flyout {
 	background: #d07b00;
-	font-family:'gentona-semibold', Arial, sans-serif;
-	font-weight: 600;
+	font-family:'gentona-book', Arial, sans-serif;
+	font-weight: 400;
 	color: #FFF;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
 
-#quicklinks .flyout { 
+#quicklinks .flyout {
 	background: #f2f2f2;
 	padding: 0;
-	margin: 0; 
-	border: 1px solid #d9d9d9; 
-	position: absolute; 
-	left: 0px; 
-	width: 180px; 
-	z-index: 40; 
-	-webkit-box-shadow: none; 
-	-moz-box-shadow: none; 
+	margin: 0;
+	border: 1px solid #d9d9d9;
+	position: absolute;
+	left: 0px;
+	width: 180px;
+	z-index: 40;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
 	box-shadow: none;
-	 
+
 }
 
-#quicklinks ul.flyout li { 
-	border-left: none; 
+#quicklinks ul.flyout li {
+	border-left: none;
 }
 
-#quicklinks ul.flyout li a { 
-	background: #f2f2f2; 
-	border-bottom: 1px solid #e6e6e6; 
+#quicklinks ul.flyout li a {
+	background: #f2f2f2;
+	border-bottom: 1px solid #e6e6e6;
 	font-family: 'gentona-book', Arial, sans-serif;
 	font-weight: 400;
-	color: #555; 
-	display: block; 
-	font-size: 12px; 
+	color: #555;
+	display: block;
+	font-size: 12px;
 	text-transform: none;
-	height: auto; 
-	line-height: 1; 
-	padding: 15px 0 15px 10px; 
-	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; 
-	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; 
-	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; 
+	height: auto;
+	line-height: 1;
+	padding: 15px 0 15px 10px;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
 
-#quicklinks ul.flyout li a:hover { 
-	background: #ffcc99; 
-	color: #2c2c33; 
+#quicklinks ul.flyout li a:hover {
+	background: #ffcc99;
+	color: #2c2c33;
 }
 
 #quicklinks .nav-bar > li.has-flyout > a:first-child::after {
@@ -973,8 +965,8 @@ body.home .reveal-modal {
 
 #field_search,
 #field_search dd {
-	font-family: 'gentona-semibold', Arial, sans-serif;
-  font-weight: 600;
+	font-family: 'gentona-book', Arial, sans-serif;
+  font-weight: 400;
   font-style: normal;
 	color: #FFF;
 	font-size: 16px;
@@ -1024,7 +1016,7 @@ body.home .reveal-modal {
 #field_search .tabs {
 	border-bottom:none;
 }
-#field_search .tabs dd.active, 
+#field_search .tabs dd.active,
 #field_search .tabs li.active {
 	border-top:none;
 	margin-top: 0;
@@ -1099,7 +1091,7 @@ body.home .reveal-modal {
 #links ul {
 	list-style: none;
 }
-#links .tabs dd.active, 
+#links .tabs dd.active,
 #links .tabs li.active {
 	border-top:none;
 	margin-top: 0;
@@ -1191,7 +1183,7 @@ min-width: 240px;
 	margin-left:10px;
 	float:right;
 }
-		
+
 #humanities {
 	width: 30px;
 	height: 14px;
@@ -1288,7 +1280,7 @@ min-width: 240px;
 	border:none;
 }
 
-#fields_search h5 { 
+#fields_search h5 {
 	margin-top:5px;
 	margin-bottom: 5px;
 }
@@ -1356,8 +1348,8 @@ min-width: 240px;
 }
 /******* FIELDS OF STUDY LANDING PAGES ******/
 #field_image {
-	font-family: 'gentona-semibold', Arial, sans-serif;
-  	font-weight: 600;
+	  font-family: 'gentona-book', Arial, sans-serif;
+  	font-weight: 400;
   	font-style: normal;
 }
 
@@ -1380,14 +1372,14 @@ min-width: 240px;
 #landing h2,
 #landing h3,
 #landing a  {
-	color: #418fde;	
+	color: #418fde;
 }
 p.contact,
 #landing p.contact a {
 	font-size: 14px;
 	margin-bottom: 25px;
 	color: #000;
-	line-height: 2em;	
+	line-height: 2em;
 }
 
 p.contact span {
@@ -1426,8 +1418,8 @@ ul.nav li [class*="icon-"]:before {
 }
 
 .sidebar_bg ul.nav li a {
-	font-family: 'gentona-semibold', Arial, sans-serif;
-  	font-weight: 600;
+	font-family: 'gentona-book', Arial, sans-serif;
+  	font-weight: 400;
   	font-style: normal;
 	color:#005eb8;
 }
@@ -1482,8 +1474,8 @@ ul.nav:last-child {
 
 .banner h3 {
 	text-transform: uppercase;
-	font-family: 'gentona-semibold', Arial, sans-serif;
-  	font-weight: 600;
+	font-family: 'gentona-book', Arial, sans-serif;
+  	font-weight: 400;
 	font-size: 18px;
 	line-height: 36px;
 }
@@ -1509,8 +1501,8 @@ body.news-events h4 {
 	line-height: 1.1em;
 	margin-bottom:6px;
 	color: #000;
-	font-family: 'gentona-semibold', Arial, sans-serif;
-  	font-weight: 600;
+	font-family: 'gentona-book', Arial, sans-serif;
+  	font-weight: 400;
 }
 
 body.news-events summary,
@@ -1518,7 +1510,7 @@ body.news-events a summary,
 #archive a summary {
 	line-height: 1.25em;
 	color: #2c2c33;
-	
+
 }
 
 body.news-events .wp-post-image {
@@ -1568,7 +1560,7 @@ body.news-events .wp-post-image {
 
 
 #SECalendarListWrapper {
-	max-width: 300px;	
+	max-width: 300px;
 }
 
 #SECalendarListWrapper table {
@@ -1665,7 +1657,7 @@ body.news-events .wp-post-image {
 #SECalendarWrapper,
 #SECalendarWrapper table {
 	width:100%;
-} 
+}
 
 #SECalendarTable td {
 	border: 1px solid #ddd;
@@ -1687,8 +1679,8 @@ a.rssLink {
 }
 
 #SECalendarNav .SECalendarMonth {
-	font-family: 'gentona-semibold', Arial, sans-serif;
-  	font-weight: 600;
+	font-family: 'gentona-book', Arial, sans-serif;
+  	font-weight: 400;
   font-style: normal;
 	font-size: 28px;
 	margin-top: 5px;
@@ -1857,7 +1849,7 @@ body.about div.orbit {
 body.research div.orbit-wrapper,
 body.about div.orbit-wrapper {
 	width: auto !important;
-	padding: 0;	
+	padding: 0;
 }
 
 .ie8 body.research div.orbit-wrapper {
@@ -2121,7 +2113,7 @@ you can use the generic selector below, but it's slower:
 
 	meanMenu
 	--------
-	
+
 	To be used with jquery.meanmenu.js by Chris Wharton (http://www.meanthemes.com/plugins/meanmenu/)
 
 ####################################################################### */
@@ -2132,7 +2124,7 @@ display: none;
 }
 
 /* when under viewport size, .mean-container is added to body */
-.mean-container .mean-bar { 
+.mean-container .mean-bar {
 float: left;
 width: 100%;
 position: relative;
@@ -2153,8 +2145,8 @@ text-decoration: none;
 font-size: 16px;
 line-height: 22px;
 display: block;
-font-family: 'gentona-semibold', Arial, sans-serif;
-font-weight: 600;
+font-family: 'gentona-book', Arial, sans-serif;
+font-weight: 400;
 text-align: left;
 }
 .mean-container a.meanmenu-reveal h3 {
@@ -2168,7 +2160,7 @@ background: #fff;
 height: 3px;
 margin-top: 3px;
 }
-.mean-container .mean-nav { 
+.mean-container .mean-nav {
 float: left;
 width: 100%;
 background: #0c1923;
@@ -2204,7 +2196,7 @@ width: 80%;
 padding: 1em 10%;
 border-bottom: 1px solid #f1f1f1;
 border-bottom: 1px solid rgba(255,255,255,0.25);
-opacity: 0.75; 
+opacity: 0.75;
 filter: alpha(opacity=75);
 text-shadow: none !important;
 visibility: visible;
@@ -2225,9 +2217,9 @@ padding: 1em 20%;
 width: 50%;
 padding: 1em 25%;
 }
-.mean-container .mean-nav ul li a:hover { 
+.mean-container .mean-nav ul li a:hover {
 background: #252525;
-background: rgba(255,255,255,0.1); 
+background: rgba(255,255,255,0.1);
 }
 .mean-container .mean-nav ul li a.mean-expand {
 width: 26px;
@@ -2244,12 +2236,12 @@ font-weight: 700;
 .mean-container .mean-nav ul li a.mean-expand:hover {
 background: none;
 }
-.mean-container .mean-push { 
+.mean-container .mean-push {
 float: left;
 width: 100%;
 padding: 0;
 margin: 0;
-clear: both; 
+clear: both;
 }
 .mean-nav .wrapper {
 width: 100%;
@@ -2271,7 +2263,7 @@ margin: 0;
 	border-bottom-left-radius: 			0px;
 	border-radius: 0px !important;
 	-webkit-border-radius:0px !important;
-	-moz-border-radius: 0px !important;	
+	-moz-border-radius: 0px !important;
 	-webkit-appearance: none;
 }
 		#search-bar input[type="text"],
@@ -2294,8 +2286,8 @@ margin: 0;
 		}
 		#main_nav ul li {
 			width: 33%;
-		}		
-		
+		}
+
 		#main_nav ul {
 			height: 144px;
 		}
@@ -2313,11 +2305,11 @@ margin: 0;
 			width: auto;
 		}
 		.mobile-field {
-			clear:left; 
+			clear:left;
 			float:none;
 		}
-		body.fields .row .mobile-two { 
-			width:100% !important; 
+		body.fields .row .mobile-two {
+			width:100% !important;
 		}
 }
 
@@ -2330,7 +2322,7 @@ margin: 0;
 	}
 }
 /*******Attributions*******/
-/* 
+/*
 Icon Set:	IcoMoon - Free -- http://keyamoon.com/icomoon/
 License:	CC BY-SA 3.0 -- http://creativecommons.org/licenses/by-sa/3.0/
 */
