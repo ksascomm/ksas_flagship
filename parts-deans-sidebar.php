@@ -1,6 +1,6 @@
 <aside class="four columns toplayer" id="sidebar" role="complementary"> <!-- Begin Sidebar -->
 		<div class="photo-page-right">
-			<img src="<?php echo get_template_directory_uri() ?>/assets/images/dean.jpg" class="radius-topright offset-gutter" />
+			<img src="<?php echo get_template_directory_uri() ?>/assets/images/deanwendland.jpg" class="radius-topright offset-gutter" />
 		</div>
 		<div class="rust_bg offset-gutter" id="sidebar_header">
 			<h5>James B. Knapp Dean Beverly Wendland</h5>
