@@ -17,9 +17,9 @@
 		'container_class' => 'seven column', 
 		'walker' => new foundation_navigation() ) ); ?>
 		
-		<nav class="two column iconfont" id="social-media">
-			<a href="http://facebook.com/jhuksas" title="Facebook"><span class="icon-facebook"></span><span class="hide">Facebook</span></a>
-			<a href="http://vimeo.com/channels/jhuksas" title="Vimeo"><span class="icon-vimeo"></span><span class="hide">Vimeo</span></a>
+		<nav class="two column iconfont">
+			<a href="http://facebook.com/jhuksas" title="Facebook"><i class="fa fa-facebook-official fa-3x" style="margin-right: 10px"></i></a>
+			<a href="https://www.youtube.com/user/jhuksas" title="YouTube"><i class="fa fa-youtube-square fa-3x"></i></a>
 		</nav>
   	</div>
   	<div class="row" id="copyright" role="content-info">
