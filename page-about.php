@@ -30,26 +30,6 @@
 					</div> <!-- End number -->
 			<?php endwhile; endif; ?>
 				</div> <!-- End slider -->
-			<?php $dean_letter_query = new WP_Query(array(
-						'post_type' => 'post',
-						'category_name' => 'newsletter',
-						'posts_per_page' => '1'
-						
-						));
-			if ( $dean_letter_query->have_posts() ) : while ( $dean_letter_query->have_posts() ) : $dean_letter_query->the_post(); ?>
-			<a href="<?php the_permalink(); ?>">
-				<div class="blue_bg row no-gutter" id="newsletter" role="complementary">
-					<div class="eight columns">
-						<h6 class="white">Dean's Newsletter <span class="floatright"><?php echo get_post_meta($post->ID, 'date_newsletter', true); ?></span></h6>
-						<h5 class="white"><?php the_title(); ?></h5>
-						<span class="white"><?php the_excerpt(); ?></span>
-					</div>
-					<div class="four columns no-gutter">
-						<?php the_post_thumbnail('medium'); ?>
-					</div>
-				</div> 
-			</a><!-- End Newsletter -->
-			<?php endwhile; endif; ?>
 			</div>
 		</div>		
 	</div>
