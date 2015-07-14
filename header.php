@@ -57,14 +57,14 @@ if( is_page() ) {
 		<div class="row">
 			<div id="search-bar" class="offset-by-eight four mobile-four columns" role="search">
 				<div class="row">
-					<div class="six columns mobile-three">
+					<div class="six mobile-three columns">
 					
 					<form method="GET" action="<?php echo site_url('/search'); ?>" role="search">
 						<input type="submit" class="icon-search" value="&#xe004;" />
 						<label class="hide" for="search">Search</label><input type="text" name="q" id="search" placeholder="Search this site" />
 					</form>
 					</div>
-					<div class="six columns links hide-for-small">
+					<div class="six mobile-one columns links">
 						<a href="http://www.jhu.edu">jhu.edu</a> |
 						<a href="http://library.jhu.edu/">Library</a> |
 						<a href="<?php echo network_site_url(); ?>about/contact/">Contact</a>

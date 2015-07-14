@@ -2266,17 +2266,29 @@ margin: 0;
 	-moz-border-radius: 0px !important;
 	-webkit-appearance: none;
 }
-		#search-bar input[type="text"],
-		#fields_search input[type="text"] {
-			width: 75%;
-		}
-
+#search-bar input[type="text"],
+#fields_search input[type="text"] {
+	width: 75%;
+	}
+#search-bar .links {
+	display: none;
+}
 }
 @media only screen and (max-width: 975px) {
 #main_nav ul li {
 	padding: 0 7px;
 }
+}
 
+@media only screen and (min-width: 767px) and (max-width: 975px) {
+
+ul.sub-menu li {
+	  padding: 0 8px !important;
+}
+
+ul.sub-menu li a {
+	font-size: 15px !important;
+}
 }
 
 @media only screen and (max-width: 767px) {
@@ -2302,7 +2314,8 @@ margin: 0;
 @media only screen and (max-width: 640px) {
 		#main_nav ul li {
 			padding: 0 20px;
-			width: auto;
+			/*width: auto;*/
+			text-align:center;
 		}
 		.mobile-field {
 			clear:left;
